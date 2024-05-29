@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\David\\Desktop\\FINAL\\TDAH-FINAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54986F7B-28E5-16B7-25ED-A0CCC6ADEED8}|Assembly-CSharp.csproj|C:\\Users\\David\\Desktop\\FINAL\\TDAH-FINAL\\assets\\scripts\\videoplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54986F7B-28E5-16B7-25ED-A0CCC6ADEED8}|Assembly-CSharp.csproj|c:\\users\\david\\desktop\\final\\tdah-final\\assets\\scripts\\videoplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54986F7B-28E5-16B7-25ED-A0CCC6ADEED8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\videoplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54986F7B-28E5-16B7-25ED-A0CCC6ADEED8}|Assembly-CSharp.csproj|c:\\users\\david\\desktop\\final\\tdah-final\\assets\\scripts\\activategameobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54986F7B-28E5-16B7-25ED-A0CCC6ADEED8}|Assembly-CSharp.csproj|c:\\users\\david\\desktop\\final\\tdah-final\\assets\\scripts\\gazewatchtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54986F7B-28E5-16B7-25ED-A0CCC6ADEED8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gazewatchtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54986F7B-28E5-16B7-25ED-A0CCC6ADEED8}|Assembly-CSharp.csproj|C:\\Users\\David\\Desktop\\FINAL\\TDAH-FINAL\\assets\\scripts\\activategameobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54986F7B-28E5-16B7-25ED-A0CCC6ADEED8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\activategameobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GazeWatchTracker.cs",
+              "DocumentMoniker": "C:\\Users\\David\\Desktop\\FINAL\\TDAH-FINAL\\Assets\\Scripts\\GazeWatchTracker.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GazeWatchTracker.cs",
+              "ToolTip": "C:\\Users\\David\\Desktop\\FINAL\\TDAH-FINAL\\Assets\\Scripts\\GazeWatchTracker.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GazeWatchTracker.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAADwvzwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T00:54:45.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ActivateGameObjects.cs",
               "DocumentMoniker": "C:\\Users\\David\\Desktop\\FINAL\\TDAH-FINAL\\Assets\\Scripts\\ActivateGameObjects.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ActivateGameObjects.cs",
@@ -34,12 +51,11 @@
               "RelativeToolTip": "Assets\\Scripts\\ActivateGameObjects.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAkwCcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T22:49:55.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T22:49:55.305Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "WordCounter.cs",
               "DocumentMoniker": "C:\\Users\\David\\Desktop\\FINAL\\TDAH-FINAL\\Assets\\Scripts\\WordCounter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WordCounter.cs",
@@ -57,7 +73,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\VideoPlayerController.cs",
               "ToolTip": "C:\\Users\\David\\Desktop\\FINAL\\TDAH-FINAL\\Assets\\Scripts\\VideoPlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\VideoPlayerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwDcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T16:07:38.585Z",
               "EditorCaption": ""
