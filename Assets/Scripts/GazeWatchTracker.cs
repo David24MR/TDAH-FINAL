@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class GazeWatchTracker : MonoBehaviour
 {
@@ -9,6 +10,18 @@ public class GazeWatchTracker : MonoBehaviour
     private bool isWatching = false;
     private float watchStartTime;
     private List<float> watchIntervals = new List<float>();
+    private VideoPlayer videoPlayer; // Referencia al componente VideoPlayer
+    private bool videoEnded = false;
+    private float videoEndTime;
+
+    void Start()
+    {
+        // Obtener el componente VideoPlayer del objeto slate
+        videoPlayer = slate.GetComponent<VideoPlayer>();
+
+        // Suscribirse al evento de fin de reproducción del video
+        videoPlayer.loopPointReached += VideoEnded;
+    }
 
     void Update()
     {
@@ -42,6 +55,32 @@ public class GazeWatchTracker : MonoBehaviour
             float watchInterval = Time.time - watchStartTime;
             watchIntervals.Add(watchInterval);
         }
+
+        if (videoEnded && isWatching)
+        {
+            // Si el video ha terminado y el usuario todavía lo está mirando, considerar este tiempo como el último intervalo
+            float lastInterval = Time.time - videoEndTime;
+            watchIntervals.Add(lastInterval);
+            isWatching = false; // Reiniciar el estado de mirar después de guardar el último intervalo
+        }
+    }
+
+    // Método para manejar el evento de fin de reproducción del video
+    private void VideoEnded(VideoPlayer vp)
+    {
+        if (!videoEnded)
+        {
+            videoEnded = true;
+            videoEndTime = Time.time;
+
+            if (isWatching)
+            {
+                // Si el usuario estaba mirando cuando el video terminó, guarda el intervalo hasta el momento de finalización del video
+                float watchInterval = videoEndTime - watchStartTime;
+                watchIntervals.Add(watchInterval);
+                isWatching = false; // Reiniciar el estado de mirar después de guardar el intervalo
+            }
+        }
     }
 
     // Método para obtener los intervalos vistos
@@ -55,7 +94,7 @@ public class GazeWatchTracker : MonoBehaviour
     {
         foreach (float interval in watchIntervals)
         {
-            Debug.Log("Intervalo visto: " + interval + " segundos");
+            Debug.Log("Intervalo de: " + interval + " segundos");
         }
     }
 }

@@ -29,7 +29,7 @@ public class VideoPlayerController : MonoBehaviour
         float totalTime = intervals.Sum();
 
         // Crear el mensaje final con los intervalos y el tiempo total
-        string finalMessage = intervalsInfo + "\nTiempo total visto: " + totalTime.ToString("F2") + " segundos";
+        string finalMessage = intervalsInfo + "\nTiempo total: " + totalTime.ToString("F2") + " segs.";
 
         // Mostrar el mensaje en el panel de UI
         infoText.text = finalMessage;

@@ -9,6 +9,6 @@ public class WordCounter : MonoBehaviour
     public void OnButtonPressed()
     {
         count++;
-        counterText.text = "Count: " + count.ToString();
+        counterText.text = "Veces escuchada: " + count.ToString();
     }
 }
